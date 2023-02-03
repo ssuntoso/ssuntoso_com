@@ -7,9 +7,9 @@ import { faGithub, faLinkedin, faInstagram, faWhatsapp } from "@fortawesome/free
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
-  const rand = Math.floor(Math.random() * 1640);
   const [quotes, setQuotes] = useState(null)
   useEffect(() => {
+    const rand = Math.floor(Math.random() * 1640);
     fetch("https://type.fit/api/quotes")
     .then(response => response.json())
     .then(data => setQuotes(data[rand]))
