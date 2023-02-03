@@ -20,7 +20,7 @@ export default function App() {
     <div className='container mx-auto'>
       <div>
         <div className='border-b-2'>
-          <img src={logo} className='w-60 mx-auto my-10'/>
+          <img src={logo} className='w-60 mx-auto my-10' alt="Sean Michael Suntoso"/>
         </div>
         <div className='text-center'>
           {
@@ -42,7 +42,7 @@ export default function App() {
       <div className='bg-neutral-100'>
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
           <div className='hidden lg:block'>
-            <img src={potrait} className='w-[200px] mx-auto mt-10'/>
+            <img src={potrait} className='w-[200px] mx-auto mt-10' alt="potrait"/>
           </div>
           <div className='my-10 mx-10'>
             <h1 className='font-medium xl:text-6xl lg:text-4xl text-3xl lg:mt-10 mb-5'>Hello, I am Sean</h1>
