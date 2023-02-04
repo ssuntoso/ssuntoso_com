@@ -5,8 +5,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'display': ['Helvetica', 'Arial', 'sans-serif'],
-      'body': ['Helvetica', 'Arial', 'sans-serif'],
+      'sans': ['TT Norms', 'Helvetica', 'Arial', 'sans-serif'],
+      'serif': ['savoy', 'Times', 'Merriweather', 'serif'],
     },
     extend: {},
   },

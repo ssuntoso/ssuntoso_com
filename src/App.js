@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import logo from './images/MyLogo.webp';
-import potrait from './images/IMG_8036.webp';
+import potrait from './images/potrait.jpeg';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -27,7 +27,7 @@ export default function App() {
             quotes ? 
             <div className='mt-10 mb-14 mx-4'>
               <h1 className='tracking-widest font-extralight'>RANDOM QUOTES</h1> 
-              <p className='mt-8 mb-2 text-lg font-medium'>
+              <p className='mt-8 mb-2 text-lg font-medium font-serif'>
                 "{quotes.text}"
               </p>
               <p className='font-light italic'>
@@ -40,13 +40,13 @@ export default function App() {
         </div>
       </div>
       <div className='bg-neutral-100'>
-        <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
-          <div className='hidden lg:block'>
-            <img src={potrait} className='w-[200px] mx-auto mt-10' alt="potrait"/>
+        <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-5'>
+          <div>
+            <img src={potrait} className='w-full mx-auto' alt="potrait"/>
           </div>
           <div className='my-10 mx-10'>
             <h1 className='font-medium xl:text-6xl lg:text-4xl text-3xl lg:mt-10 mb-5'>Hello, I am Sean</h1>
-            <p className='xl:text-4xl lg:text-3xl text-2xl text-gray-400 italic font-light'>I am an Applied AI student in The University of Hong Kong. I am also a certified AWS Solution Architect - Associate and software developer.</p>
+            <p className='xl:text-4xl lg:text-2xl text-2xl text-gray-400 font-thin font-serif'>I am an Applied AI student in The University of Hong Kong. I am also a certified AWS Solution Architect - Associate and software developer.</p>
           </div>
         </div>
       </div>
