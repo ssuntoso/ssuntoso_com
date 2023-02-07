@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from '../components/Title'
 import ExperienceCard from '../components/ExperienceCard'
+import Link from '../components/Link'
 
 export default function Experience(){
   return(
@@ -61,7 +62,7 @@ export default function Experience(){
         <ExperienceCard 
           date="OCT 2017 - OCT 2020"
           company="SMAK 1 PENABUR Jakarta"
-          title="Student Council Web Developer"
+          title="Student Council Software Developer"
         >
           <li>
             Develop school sponsored website
@@ -76,6 +77,12 @@ export default function Experience(){
             Implement Search Engine Optimization (SEO), generates 100+ visitors each month
           </li>
         </ExperienceCard>
+      </div>
+      <div className='text-center mt-5'>
+        <Link
+          href='https://www.linkedin.com/in/ssuntoso/'
+          text='View Linkedin'
+        />
       </div>
     </div>
   )
