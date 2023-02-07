@@ -7,7 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact(){
   return(
-    <div className='bg-gray-50  mt-10 pt-1 pb-14 px-4'>
+    <div className='bg-gray-100  mt-10 pt-1 pb-14 px-4'>
       <Title head='Contact' highlight='Hit Me Up!'/>
       <p className='text-center font-serif text-light text-xl'>
         Are you interested in collaborating or want to connect or chat? If so, hit the button down below.

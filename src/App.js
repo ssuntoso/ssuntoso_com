@@ -27,13 +27,87 @@ export default function App() {
     }
   }, []);
 
+  const handleClickScroll = (value) => {
+    const element = document.getElementById(`${value}`);
+    const headerOffset = 150;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    console.log(offsetPosition)
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    }
+  };
+
+  //navbar animation
+  const [active,setActive] = useState(false);
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
+  const handleClick = ()=>{
+      setActive(!active)
+  }
+
   return (
-    <div className=''>
+    <div className='bg-white'>
       <header className={`header ${
-          small ? "sticky top-0 py-5 bg-white" : " container mx-auto border-b-2 sticky top-0 py-10"
+          small ? "border-b-2 sticky top-0 bg-gray-200 p-3" : "mx-auto border-b-2 sticky top-0 lg:p-6 p-3"
         }`}>
-        <div>
-          <img src={logo} className='w-60 mx-auto' alt="Sean Michael Suntoso"/>
+        <div className='hidden lg:block'>
+          <div>
+            <img src={logo} className='w-48 mx-auto' alt="Sean Michael Suntoso"/>
+          </div>
+          <div>
+            <ul className='flex place-content-center uppercase text-sm mt-5'>
+              <li className='mx-6 hover:cursor-pointer hover:underline' onClick={() => handleClickScroll('experience')}>Experience</li>
+              <li className='mx-6 hover:cursor-pointer hover:underline' onClick={() => handleClickScroll('education')}>Education</li>
+              <li className='mx-6 hover:cursor-pointer hover:underline' onClick={() => handleClickScroll('skills')}>Skills</li>
+              <li className='mx-6 hover:cursor-pointer hover:underline' onClick={() => handleClickScroll('organisations')}>Organisations</li>
+              <li className='mx-6 hover:cursor-pointer hover:underline' onClick={() => handleClickScroll('contact')}>Contact</li>
+            </ul>
+          </div>
+        </div>
+        <div className='lg:hidden'>
+          <img src={logo} className='w-40 mx-auto flex-1 flex items-center justify-center' alt="Sean Michael Suntoso"/>
+          <div className='absolute right-1 inset-y-1'>
+          <button
+            className="flex flex-col h-10 w-12 rounded justify-center items-center group lg:hidden"
+            onClick={() => handleClick()}
+          >
+            <div
+              className={`${genericHamburgerLine} ${
+                active
+                  ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
+                  : "opacity-50 group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                active ? "opacity-0" : "opacity-50 group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                active
+                  ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
+                  : "opacity-50 group-hover:opacity-100"
+              }`}
+            />
+          </button>
+          </div>
+          {active?
+          <div className = "content overflow-hidden">
+              <div className="overflow-hidden">
+                  <ul className='place-content-center uppercase text-sm mt-5 text-center'>
+                    <li className='py-3 w-full' onClick={() => handleClickScroll('experience')}>Experience</li>
+                    <li className='py-3 w-full' onClick={() => handleClickScroll('education')}>Education</li>
+                    <li className='py-3 w-full' onClick={() => handleClickScroll('skills')}>Skills</li>
+                    <li className='py-3 w-full' onClick={() => handleClickScroll('organisations')}>Organisations</li>
+                    <li className='py-3 w-full' onClick={() => handleClickScroll('contact')}>Contact</li>
+                  </ul>
+              </div>
+          </div>
+          :
+          <></>
+          }
         </div>
       </header>
       <div className='container mx-auto'>
@@ -53,7 +127,7 @@ export default function App() {
             <></>
           }
         </div>
-        <div className='bg-neutral-100'>
+        <div className='bg-gray-100'>
           <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-5'>
             <div>
               <img src={potrait} className='w-full mx-auto' alt="potrait"/>
@@ -64,11 +138,21 @@ export default function App() {
             </div>
           </div>
         </div>
-        <Experience />
-        <Education />
-        <Skills />
-        <Organisations />
-        <Contact />
+        <div id='experience'>
+          <Experience/>
+        </div>
+        <div id='education'>
+          <Education />
+        </div>
+        <div id='skills'>
+          <Skills />
+        </div>
+        <div id='organisations'>
+          <Organisations />
+        </div>
+        <div id='contact'>
+          <Contact />
+        </div>
         <div className='border-t-2 mt-20 mb-5 text-center'>
           <p className="text-sm mt-10 font-thin">
             Made with ♥ by Sean Michael Suntoso
