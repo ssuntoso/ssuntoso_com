@@ -6,7 +6,7 @@ export default function Experience(){
   return(
     <div>
       <Title head='Experience' highlight='Years of Track Record'/>
-      <div className='grid lg:grid-cols-2 gap-2 mx-4'>
+      <div className='grid lg:grid-cols-2 grid-cols-1 gap-2 mx-4'>
         <ExperienceCard 
           date="JUN 2022 - AUG 2022"
           company="Choco Up"
