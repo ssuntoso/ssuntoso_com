@@ -8,6 +8,8 @@ import Skills from './sections/Skills'
 import Organisations from './sections/Organisations'
 import Contact from './sections/Contact'
 
+import resume from './SeanMichaelSUNTOSOResume.pdf'
+
 export default function App() {
   const [quotes, setQuotes] = useState(null)
   useEffect(() => {
@@ -133,8 +135,11 @@ export default function App() {
               <img src={potrait} className='w-full mx-auto' alt="potrait"/>
             </div>
             <div className='py-10 px-10'>
-              <h1 className='font-medium xl:text-6xl lg:text-4xl text-3xl lg:mt-10 mb-5'>Hello, I am Sean</h1>
-              <p className='xl:text-4xl lg:text-2xl text-2xl text-gray-400 font-thin font-serif'>I am an Applied AI student in The University of Hong Kong. I am also a certified AWS Solution Architect - Associate and software developer.</p>
+              <h1 className='font-medium xl:text-6xl lg:text-4xl text-3xl xl:mt-10 mb-5'>Hello, I am Sean</h1>
+              <p className='xl:text-3xl text-2xl text-gray-500 font-thin font-serif mb-10'>I am an Applied AI student in The University of Hong Kong. I am also a certified AWS Solution Architect - Associate and software developer.</p>
+              <a href={resume} className='border-2 p-2 border-gray-400 hover:border-gray-500 hover:text-gray-600 hover:cursor-pointer text-gray-500 xl:text-2xl lg:text-xl text-lg' target='_blank' rel="noreferrer">
+                View resume
+              </a>
             </div>
           </div>
         </div>
