@@ -76,7 +76,7 @@ export default function Organisations(){
             Elected as the leader of SMAK 1 Boys Crew. Several intra-school activities that were organized successfully under my leadership are: Leadership Camp, Social Responsibility Project and Volunteering
           </li>
           <li>
-            Developed and maintained the official school website (smakone.org) and social media
+            Given responsibility to lead the student organizing committee of RAIMUNA PENABUR 2019, a national Scout gathering for schools under PENABUR foundation, that is attended by 2,800 Scout members
           </li>
         </ExperienceCard>
       </div>
