@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import logo from './images/MyLogo.webp';
 import potrait from './images/potrait.jpeg';
 
+import Experience from './sections/Experience'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -26,12 +28,12 @@ export default function App() {
           {
             quotes ? 
             <div className='mt-10 mb-14 mx-4'>
-              <h1 className='tracking-widest font-extralight'>RANDOM QUOTES</h1> 
+              <h2 className='tracking-widest font-extralight'>RANDOM QUOTES</h2> 
               <p className='mt-8 mb-2 text-lg font-medium font-serif'>
                 "{quotes.text}"
               </p>
               <p className='font-light italic'>
-                {quotes.author}
+                -{quotes.author}
               </p>
             </div>
             :
@@ -50,7 +52,8 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='border-t-2 mt-20 text-center'>
+      <Experience />
+      <div className='border-t-2 mt-20 mb-5 text-center'>
             <p className="text-4xl my-7">
               <a href="mailto:contact@ssuntoso.com" target="_blank" rel="noreferrer" className="hover:text-gray-500 p-3">
                 <FontAwesomeIcon icon={faEnvelope} />
