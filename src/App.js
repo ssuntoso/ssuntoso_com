@@ -66,7 +66,7 @@ export default function App() {
           }
         }
         className={`header ${
-          small ? "sticky top-0 bg-black lg:h-24 p-3 content" : "content bg-black lg:bg-transparent lg:container mx-auto lg:border-black border-b sticky top-0 lg:p-6 p-3"
+          small ? "sticky top-0 bg-black lg:h-20 p-3 content" : "content bg-black lg:bg-transparent lg:container mx-auto lg:border-black border-b sticky top-0 lg:p-6 p-3"
         }`}>
         <div className='hidden lg:block'>
           <div>

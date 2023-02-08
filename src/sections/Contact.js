@@ -7,26 +7,26 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact(){
   return(
-    <div className='bg-[#C2BDB9]  mt-10 pt-1 pb-14 px-4'>
+    <div className='bg-black  mt-10 pt-1 pb-14 px-4 text-white'>
       <Title head='Contact' highlight='Hit Me Up!'/>
       <p className='text-center font-serif text-light text-xl'>
         Are you interested in collaborating or want to connect or chat? If so, hit the button down below.
       </p>
       <div className='my-5 text-center'>
         <p className="text-4xl my-7">
-          <a href="mailto:contact@ssuntoso.com" target="_blank" rel="noreferrer" className="hover:text-gray-600 p-3">
+          <a href="mailto:contact@ssuntoso.com" target="_blank" rel="noreferrer" className="hover:text-[#CEC7C8] p-3">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-          <a href="https://wa.me/85263592040" target="_blank" rel="noreferrer" className="hover:text-gray-600 p-3">
+          <a href="https://wa.me/85263592040" target="_blank" rel="noreferrer" className="hover:text-[#CEC7C8] p-3">
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
-          <a href="https://github.com/ssuntoso" target="_blank" rel="noreferrer" className="hover:text-gray-600 p-3">
+          <a href="https://github.com/ssuntoso" target="_blank" rel="noreferrer" className="hover:text-[#CEC7C8] p-3">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://www.linkedin.com/in/ssuntoso" target="_blank" rel="noreferrer" className="hover:text-gray-600 p-3">
+          <a href="https://www.linkedin.com/in/ssuntoso" target="_blank" rel="noreferrer" className="hover:text-[#CEC7C8] p-3">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://www.instagram.com/ssuntoso/" target="_blank" rel="noreferrer" className="hover:text-gray-600 p-3">
+          <a href="https://www.instagram.com/ssuntoso/" target="_blank" rel="noreferrer" className="hover:text-[#CEC7C8] p-3">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </p>
