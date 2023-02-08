@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@media only screen and (min-width: 1024px) {
+  .content{
+    height: 105px
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .content{
+    height: 52px;
+    transition: height ease 0.5s;
+  }
+}
+
 @font-face {
   font-family: 'TT Norms';
   src: url('./fonts/TT Norms Pro Thin.otf');

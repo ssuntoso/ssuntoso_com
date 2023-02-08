@@ -30,18 +30,6 @@ export default function App() {
     }
   }, []);
 
-  const handleClickScroll = (value) => {
-    const element = document.getElementById(`${value}`);
-    const headerOffset = 150;
-    const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-    console.log(offsetPosition)
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-    }
-  };
-
   //navbar animation
   const [active,setActive] = useState(false);
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
@@ -49,15 +37,41 @@ export default function App() {
       setActive(!active)
   }
 
+  const handleClickScroll = (value) => {
+    const element = document.getElementById(`${value}`);
+    const headerOffset = 150;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    const mobileOffsetPosition = elementPosition + window.pageYOffset - window.screen.height + 100 - headerOffset;
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      if(active){
+        window.scrollTo({ top: mobileOffsetPosition, behavior: 'smooth' });
+        setActive(false)
+      } else {
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <div className='bg-[#f5f5f5]'>
-      <header className={`header ${
-          small ? "sticky top-0 bg-black p-3" : "bg-black lg:bg-transparent container mx-auto lg:border-black border-b sticky top-0 lg:p-6 p-3"
+      <header 
+        style = {
+          active ? {
+            height: "100vh"
+          }
+          :
+          {
+          }
+        }
+        className={`header ${
+          small ? "sticky top-0 bg-black lg:h-24 p-3 content" : "content bg-black lg:bg-transparent lg:container mx-auto lg:border-black border-b sticky top-0 lg:p-6 p-3"
         }`}>
         <div className='hidden lg:block'>
           <div>
             { small ?
-              <img src={logo_white} className='w-48 mx-auto' alt="Sean Michael Suntoso" />
+              <img src={logo_white} className='w-36 mx-auto' alt="Sean Michael Suntoso" />
               :
               <img src={logo} className='w-48 mx-auto' alt="Sean Michael Suntoso"/>
             }
@@ -101,17 +115,15 @@ export default function App() {
           </button>
           </div>
           {active?
-          <div className = "content overflow-hidden">
-              <div className="overflow-hidden">
-                  <ul className='place-content-center uppercase text-sm mt-5 text-center text-white'>
-                    <li className='py-3 w-full' onClick={() => handleClickScroll('experience')}>Experience</li>
-                    <li className='py-3 w-full' onClick={() => handleClickScroll('education')}>Education</li>
-                    <li className='py-3 w-full' onClick={() => handleClickScroll('skills')}>Skills</li>
-                    <li className='py-3 w-full' onClick={() => handleClickScroll('organisations')}>Organisations</li>
-                    <li className='py-3 w-full' onClick={() => handleClickScroll('contact')}>Contact</li>
-                  </ul>
-              </div>
-          </div>
+            <div className="overflow-hidden">
+                <ul className='place-content-center uppercase text-sm mt-5 text-center text-white'>
+                  <li className='py-3 w-full' onClick={() => handleClickScroll('experience')}>Experience</li>
+                  <li className='py-3 w-full' onClick={() => handleClickScroll('education')}>Education</li>
+                  <li className='py-3 w-full' onClick={() => handleClickScroll('skills')}>Skills</li>
+                  <li className='py-3 w-full' onClick={() => handleClickScroll('organisations')}>Organisations</li>
+                  <li className='py-3 w-full' onClick={() => handleClickScroll('contact')}>Contact</li>
+                </ul>
+            </div>
           :
           <></>
           }
