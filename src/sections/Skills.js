@@ -42,9 +42,9 @@ export default function Skills(){
     <div>
       <Title head='Skills' highlight='Day 1 Mentality'/>
       <div className='grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 mx-4'>
-        <div className='bg-gray-100 p-5'>
-          <h1 className='text-xl font-bold mb-3'>Certification</h1>
-          <ul className='list-disc ml-4 text-gray-500 font-serif text-lg text-lg'>
+        <div className='bg-[#C2BDB9] p-5'>
+          <h1 className='text-xl mb-3'>Certification</h1>
+          <ul className='list-disc ml-4 font-serif text-lg text-lg'>
             <li>
               <Link 
                 href='https://aws.amazon.com/verification'
@@ -64,9 +64,9 @@ export default function Skills(){
             <img src={IBM} alt='IBM' className=''/>
           </p>
         </div>
-        <div className='bg-gray-100 p-5'>
+        <div className='bg-[#C2BDB9] p-5'>
           <h1 className='text-xl font-bold mb-3'>Core</h1>
-          <p className='font-serif text-gray-500 text-lg'>
+          <p className='font-serif text-lg'>
             Python, C++, AWS, JavaScript, TypeScript, Git, Docker, Linux
           </p>
           <p className='flex flex-wrap mt-10'>
@@ -80,9 +80,9 @@ export default function Skills(){
             <img src={linux} alt='linux' className='h-10 m-1'/>
           </p>
         </div>
-        <div className='bg-gray-100 p-5'>
+        <div className='bg-[#C2BDB9] p-5'>
           <h1 className='text-xl font-bold mb-3'>AI and Data Science</h1>
-          <p className='font-serif text-gray-500 text-lg'>
+          <p className='font-serif text-lg'>
             Jupyter Notebook, Numpy, Pandas, Scikit Learn, PyTorch, TensorFlow, OpenCV
           </p>
           <p className='flex flex-wrap mt-10'>
@@ -95,9 +95,9 @@ export default function Skills(){
             <img src={opencv} alt='opencv' className='h-10 m-1'/>
           </p>
         </div>
-        <div className='bg-gray-100 p-5'>
+        <div className='bg-[#C2BDB9] p-5'>
           <h1 className='text-xl font-bold mb-3'>Web Development</h1>
-          <p className='font-serif text-gray-500 text-lg'>
+          <p className='font-serif text-lg'>
             HTML, CSS, ReactJS, GatsbyJS, NextJS, PostgreSQL, NodeJS, ExpressJS
           </p>
           <p className='flex flex-wrap mt-10'>
@@ -111,9 +111,9 @@ export default function Skills(){
             <img src={express} alt='express' className='h-10 m-1'/>
           </p>
         </div>
-        <div className='bg-gray-100 p-5'>
+        <div className='bg-[#C2BDB9] p-5'>
           <h1 className='text-xl font-bold mb-3'>Languages</h1>
-          <ul className='list-disc ml-4 text-gray-500 font-serif text-lg text-lg'>
+          <ul className='list-disc ml-4 font-serif text-lg text-lg'>
             <li>
               English (Professional to Native)
             </li>
@@ -128,9 +128,9 @@ export default function Skills(){
             </li>
           </ul>
         </div>
-        <div className='bg-gray-100 p-5'>
+        <div className='bg-[#C2BDB9] p-5'>
           <h1 className='text-xl font-bold mb-3'>Other Software</h1>
-          <p className='font-serif text-gray-500 text-lg'>
+          <p className='font-serif text-lg'>
             Microsoft 365, Google Workspace, Photoshop, Pixelmator Pro, Final Cut Pro
           </p>
           <p className='flex flex-wrap mt-10'>
@@ -141,9 +141,9 @@ export default function Skills(){
             <img src={finalcut} alt='finalcut' className='h-10 m-1'/>
           </p>
         </div>
-        <div className='bg-gray-100 p-5'>
+        <div className='bg-[#C2BDB9] p-5'>
           <h1 className='text-xl font-bold mb-3'>Project Management</h1>
-          <p className='font-serif text-gray-500 text-lg'>
+          <p className='font-serif text-lg'>
             I usually work on my project using Agile Methodology
           </p>
           <p className='flex flex-wrap mt-10'>
@@ -152,9 +152,9 @@ export default function Skills(){
             <img src={clickup} alt='clickup' className='h-10 m-1'/>
           </p>
         </div>
-        <div className='bg-gray-100 p-5'>
+        <div className='bg-[#C2BDB9] p-5'>
           <h1 className='text-xl font-bold mb-3'>Interest</h1>
-          <p className='font-serif text-gray-500 text-lg'>
+          <p className='font-serif text-lg'>
             Crypto, Blockchain, Cloud Computing, Stock Market, Traveling, Cooking
           </p>
         </div>

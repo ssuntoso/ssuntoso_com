@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import logo from './images/MyLogo.webp';
+import logo_white from './images/logo_white.webp';
 import potrait from './images/potrait.jpeg';
 
 import Experience from './sections/Experience'
@@ -43,22 +44,26 @@ export default function App() {
 
   //navbar animation
   const [active,setActive] = useState(false);
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
   const handleClick = ()=>{
       setActive(!active)
   }
 
   return (
-    <div className='bg-white'>
+    <div className='bg-[#f5f5f5]'>
       <header className={`header ${
-          small ? "border-b-2 sticky top-0 bg-gray-200 p-3" : "mx-auto border-b-2 sticky top-0 lg:p-6 p-3"
+          small ? "sticky top-0 bg-black p-3" : "bg-black lg:bg-transparent container mx-auto lg:border-black border-b sticky top-0 lg:p-6 p-3"
         }`}>
         <div className='hidden lg:block'>
           <div>
-            <img src={logo} className='w-48 mx-auto' alt="Sean Michael Suntoso"/>
+            { small ?
+              <img src={logo_white} className='w-48 mx-auto' alt="Sean Michael Suntoso" />
+              :
+              <img src={logo} className='w-48 mx-auto' alt="Sean Michael Suntoso"/>
+            }
           </div>
           <div>
-            <ul className='flex place-content-center uppercase text-sm mt-5'>
+            <ul className={`flex place-content-center uppercase text-sm mt-5 ${small ? "text-white" : ""}`}>
               <li className='mx-6 hover:cursor-pointer hover:underline' onClick={() => handleClickScroll('experience')}>Experience</li>
               <li className='mx-6 hover:cursor-pointer hover:underline' onClick={() => handleClickScroll('education')}>Education</li>
               <li className='mx-6 hover:cursor-pointer hover:underline' onClick={() => handleClickScroll('skills')}>Skills</li>
@@ -68,7 +73,7 @@ export default function App() {
           </div>
         </div>
         <div className='lg:hidden'>
-          <img src={logo} className='w-40 mx-auto flex-1 flex items-center justify-center' alt="Sean Michael Suntoso"/>
+          <img src={logo_white} className='w-40 mx-auto flex-1 flex items-center justify-center' alt="Sean Michael Suntoso"/>
           <div className='absolute right-1 inset-y-1'>
           <button
             className="flex flex-col h-10 w-12 rounded justify-center items-center group lg:hidden"
@@ -77,20 +82,20 @@ export default function App() {
             <div
               className={`${genericHamburgerLine} ${
                 active
-                  ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
-                  : "opacity-50 group-hover:opacity-100"
+                  ? "rotate-45 translate-y-3 opacity-100"
+                  : "opacity-100"
               }`}
             />
             <div
               className={`${genericHamburgerLine} ${
-                active ? "opacity-0" : "opacity-50 group-hover:opacity-100"
+                active ? "opacity-0" : "opacity-100"
               }`}
             />
             <div
               className={`${genericHamburgerLine} ${
                 active
-                  ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
-                  : "opacity-50 group-hover:opacity-100"
+                  ? "-rotate-45 -translate-y-3 opacity-100"
+                  : "opacity-100"
               }`}
             />
           </button>
@@ -98,7 +103,7 @@ export default function App() {
           {active?
           <div className = "content overflow-hidden">
               <div className="overflow-hidden">
-                  <ul className='place-content-center uppercase text-sm mt-5 text-center'>
+                  <ul className='place-content-center uppercase text-sm mt-5 text-center text-white'>
                     <li className='py-3 w-full' onClick={() => handleClickScroll('experience')}>Experience</li>
                     <li className='py-3 w-full' onClick={() => handleClickScroll('education')}>Education</li>
                     <li className='py-3 w-full' onClick={() => handleClickScroll('skills')}>Skills</li>
@@ -117,7 +122,7 @@ export default function App() {
           {
             quotes ? 
             <div className='mt-10 mb-14 mx-4'>
-              <h2 className='tracking-widest font-extralight'>RANDOM QUOTES</h2> 
+              <h2 className='tracking-widest'>RANDOM QUOTES</h2> 
               <p className='mt-8 mb-2 text-lg font-medium font-serif'>
                 "{quotes.text}"
               </p>
@@ -129,15 +134,15 @@ export default function App() {
             <></>
           }
         </div>
-        <div className='bg-gray-100'>
+        <div className='bg-[#C2BDB9]'>
           <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-5'>
             <div>
               <img src={potrait} className='w-full mx-auto' alt="potrait"/>
             </div>
             <div className='py-10 px-10'>
               <h1 className='font-medium xl:text-6xl lg:text-4xl text-3xl xl:mt-10 mb-5'>Hello, I am Sean</h1>
-              <p className='xl:text-3xl text-2xl text-gray-500 font-thin font-serif mb-10'>I am an Applied AI student in The University of Hong Kong. I am also a certified AWS Solution Architect - Associate and software developer.</p>
-              <a href={resume} className='border-2 p-2 border-gray-400 hover:border-gray-500 hover:text-gray-600 hover:cursor-pointer text-gray-500 xl:text-2xl lg:text-xl text-lg' target='_blank' rel="noreferrer">
+              <p className='xl:text-3xl text-2xl font-thin font-serif mb-10'>I am an Applied AI student in The University of Hong Kong. I am also a certified AWS Solution Architect - Associate and software developer.</p>
+              <a href={resume} className='border-2 p-2 border-black hover:border-gray-500 hover:text-gray-600 hover:cursor-pointer xl:text-2xl lg:text-xl text-lg' target='_blank' rel="noreferrer">
                 View resume
               </a>
             </div>
@@ -158,7 +163,7 @@ export default function App() {
         <div id='contact'>
           <Contact />
         </div>
-        <div className='border-t-2 mt-20 mb-5 text-center'>
+        <div className='border-t-2 mt-20 pb-5 text-center'>
           <p className="text-sm mt-10 font-thin">
             Made with ♥ by Sean Michael Suntoso
           </p>
