@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 
 const measurement_id = process.env.REACT_APP_MEASUREMENT_ID
-console.log(measurement_id)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
