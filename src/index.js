@@ -8,7 +8,7 @@ const measurement_id = process.env.REACT_APP_MEASUREMENT_ID
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <script async src={`https://www.googletagmanager.com/gtag/js?id=${measurement_id}}`}></script>
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${measurement_id}`}></script>
     <script
       dangerouslySetInnerHTML={{
         __html: `
