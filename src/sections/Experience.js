@@ -9,21 +9,39 @@ export default function Experience(){
       <Title head='Experience' highlight='Years of Track Record'/>
       <div className='grid lg:grid-cols-2 grid-cols-1 gap-2 mx-4'>
         <ExperienceCard 
+          date="NOV 2022 - present"
+          company="The University of Hong Kong"
+          title="Research Assistant"
+        >
+          <li>
+            Researching AI Large Language Model (ChatGPT) application to be used in upcoming research
+          </li>
+          <li>
+            Focusing on the implementation of AI Generated Content (AIGC) and Deep Reasoning
+          </li>
+          <li>
+            Working under ex-IBM researcher guidance
+          </li>
+        </ExperienceCard>
+        <ExperienceCard 
           date="JUN 2022 - AUG 2022"
           company="Choco Up"
           title="Data Engineering Intern"
         >
           <li>
-            Integrate Lazada and Google Ads data into a single dashboard
+            Worked with the product team using agile development method
           </li>
           <li>
-            Develop smart bank statement extractor using TensorFlow
+            Integrated Lazada and Google Ads data to client dashboard
           </li>
           <li>
-            Write documentation as a guideline to use AWS Lake Formation
+          Developed a smart bank statement extractor using TensorFlow to help the credit team in analysing client cash flow
           </li>
           <li>
-            Advising and implement password manager as SOP to enhance security
+            Wrote documentation as a foundation to implement AWS Lake Formation
+          </li>
+          <li>
+            Advised and implemented password manager as a SOP to enhance security
           </li>
         </ExperienceCard>
         <ExperienceCard 
@@ -32,13 +50,13 @@ export default function Experience(){
           title="Full Stack Website Developer"
         >
           <li>
-            Develop company website
+            Developed company website to help routing information to investors
           </li>
           <li>
-            Utilizing Gatsby.js, React, and Tailwind CSS
+            Utilising Gatsby.js, React, and Tailwind CSS
           </li>
           <li>
-            Responsible for hosting and DNS setup using Netlify
+            Responsible for hosting and DNS setup
           </li>
         </ExperienceCard>
         <ExperienceCard 
@@ -47,16 +65,16 @@ export default function Experience(){
           title="Software Engineer Intern"
         >
           <li>
-            Rewrite and continue wardayaonline.com online learning platform development
+            Worked with CS department to rewrote online learning platform (wardayaonline.com)
+          </li>
+          <li>
+            Utilising Next.js, React, Material-UI, and AWS
+          </li>
+          <li>
+            Implemented Google Analytic and Search Engine Optimisation (SEO)
           </li>
           <li>
             Increased traffic to more than 1,800 visitors per month
-          </li>
-          <li>
-            Utilizing Next.js, React, Material-UI, and AWS
-          </li>
-          <li>
-            Implement Google Analytic and Search Engine Optimization (SEO)
           </li>
         </ExperienceCard>
         <ExperienceCard 
@@ -65,16 +83,13 @@ export default function Experience(){
           title="Student Council Software Developer"
         >
           <li>
-            Develop school sponsored website
+            Worked together with student council developer team in developing school sponsored websites
           </li>
           <li>
-            Lead product team for online ticketing system (3,000 customers served annually)
+            Led the product team for online ticketing system (3,000 customers served annually)
           </li>
           <li>
-            Utilizing Gatsby.js, Bootstrap, Google AMP, Tailwind CSS
-          </li>
-          <li>
-            Implement Search Engine Optimization (SEO), generates 100+ visitors each month
+            Implemented Search Engine Optimisation (SEO), generates 100+ visitors each month
           </li>
         </ExperienceCard>
       </div>

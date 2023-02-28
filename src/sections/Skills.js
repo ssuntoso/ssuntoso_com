@@ -2,39 +2,39 @@ import React from 'react';
 import Title from '../components/Title'
 import Link from '../components/Link'
 
-import AWSCert from '../images/logos/AWS_badge.png'
-import IBM from '../images/logos/IBM.png'
+import AWSCert from '../images/logos/AWS_badge.webp'
+import IBM from '../images/logos/IBM.webp'
 
-import python from '../images/logos/python.png'
-import cpp from '../images/logos/Cpp.png'
-import jptr from '../images/logos/Jupyter.png'
-import numpy from '../images/logos/numpy.png'
-import pandas from '../images/logos/pandas.png'
-import scikit from '../images/logos/scikit.png'
-import torch from '../images/logos/pytorch.png'
-import tf from '../images/logos/tf.png'
-import opencv from '../images/logos/opencv.png'
-import git from '../images/logos/Git.png'
-import aws from '../images/logos/aws.png'
-import html from '../images/logos/html.png'
-import css from '../images/logos/css.png'
-import ts from '../images/logos/ts.png'
-import js from '../images/logos/js.png'
-import reactJS from '../images/logos/react.png'
-import gatsby from '../images/logos/gatsby.png'
-import next from '../images/logos/next.png'
-import psql from '../images/logos/psql.png'
+import python from '../images/logos/python.webp'
+import cpp from '../images/logos/Cpp.webp'
+import jptr from '../images/logos/Jupyter.webp'
+import numpy from '../images/logos/numpy.webp'
+import pandas from '../images/logos/pandas.webp'
+import scikit from '../images/logos/scikit.webp'
+import torch from '../images/logos/pytorch.webp'
+import tf from '../images/logos/tf.webp'
+import opencv from '../images/logos/opencv.webp'
+import git from '../images/logos/Git.webp'
+import aws from '../images/logos/aws.webp'
+import html from '../images/logos/html.webp'
+import css from '../images/logos/css.webp'
+import ts from '../images/logos/ts.webp'
+import js from '../images/logos/js.webp'
+import reactJS from '../images/logos/react.webp'
+import gatsby from '../images/logos/gatsby.webp'
+import next from '../images/logos/next.webp'
+import psql from '../images/logos/psql.webp'
 import docker from '../images/logos/docker.webp'
-import linux from '../images/logos/linux.png'
-import node from '../images/logos/node.png'
-import express from '../images/logos/Expressjs.png'
+import linux from '../images/logos/linux.webp'
+import node from '../images/logos/node.webp'
+import express from '../images/logos/Expressjs.webp'
 import jira from '../images/logos/jira.svg'
-import conflu from '../images/logos/conflu.png'
-import clickup from '../images/logos/clickup.png'
-import m365 from '../images/logos/365.png'
-import ps from '../images/logos/ps.png'
-import pixel from '../images/logos/pixelmator.png'
-import finalcut from '../images/logos/finalcut.png'
+import conflu from '../images/logos/conflu.webp'
+import clickup from '../images/logos/clickup.webp'
+import m365 from '../images/logos/365.webp'
+import ps from '../images/logos/ps.webp'
+import pixel from '../images/logos/pixelmator.webp'
+import finalcut from '../images/logos/finalcut.webp'
 import google from '../images/logos/google.svg'
 
 export default function Skills(){
@@ -44,7 +44,7 @@ export default function Skills(){
       <div className='grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 mx-4'>
         <div className='bg-[#CEC7C8] p-5'>
           <h1 className='text-xl mb-3'>Certification</h1>
-          <ul className='list-disc ml-4 font-serif text-lg text-lg'>
+          <ul className='list-disc ml-4 font-serif text-lg'>
             <li>
               <Link 
                 href='https://aws.amazon.com/verification'
@@ -113,7 +113,7 @@ export default function Skills(){
         </div>
         <div className='bg-[#CEC7C8] p-5'>
           <h1 className='text-xl font-bold mb-3'>Languages</h1>
-          <ul className='list-disc ml-4 font-serif text-lg text-lg'>
+          <ul className='list-disc ml-4 font-serif text-lg'>
             <li>
               English (Professional to Native)
             </li>

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import logo from './images/MyLogo.webp';
 import logo_white from './images/logo_white.webp';
-import potrait from './images/potrait.jpeg';
+import potrait from './images/potrait.webp';
 
 import Experience from './sections/Experience'
 import Education from './sections/Education'
@@ -152,7 +152,7 @@ export default function App() {
               <img src={potrait} className='w-full mx-auto' alt="potrait"/>
             </div>
             <div className='py-10 px-10'>
-              <h1 className='font-medium xl:text-6xl lg:text-4xl text-3xl xl:mt-10 mb-5'>Hello, I am Sean</h1>
+              <h1 className='font-medium xl:text-6xl lg:text-4xl text-3xl xl:mt-10 mb-5'>Hello, I am Sean Michael Suntoso</h1>
               <p className='xl:text-3xl text-2xl font-thin font-serif mb-10'>I am an Applied AI student in The University of Hong Kong. I am also a certified AWS Solution Architect - Associate and software developer.</p>
               <a href={resume} className='border-2 p-2 border-black hover:border-gray-500 hover:text-gray-600 hover:cursor-pointer xl:text-2xl lg:text-xl text-lg' target='_blank' rel="noreferrer">
                 View resume
