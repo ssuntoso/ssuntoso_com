@@ -155,7 +155,7 @@ export default function Skills(){
         <div className='bg-[#CEC7C8] p-5'>
           <h1 className='text-xl font-bold mb-3'>Interest</h1>
           <p className='font-serif text-lg'>
-            Crypto, Blockchain, Cloud Computing, Stock Market, Traveling, Cooking
+            Cybersecurity, Crypto, Blockchain, Cloud Computing, Stock Market, Traveling, Cooking
           </p>
         </div>
       </div>
