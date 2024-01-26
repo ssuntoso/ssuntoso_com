@@ -9,18 +9,48 @@ export default function Experience(){
       <Title head='Experience' highlight='Years of Track Record'/>
       <div className='grid lg:grid-cols-2 grid-cols-1 gap-2 mx-4'>
         <ExperienceCard 
-          date="NOV 2022 - present"
+            date="JUL 2023 - PRESENT"
+            company="REVOTECH Limited"
+            title="Retrieved Augmented Generation – Large Language Model Research Intern  "
+          >
+            <li>
+              Implement of RAG-LLM for one of Hong Kong essential department
+            </li>
+            <li>
+              Analyzed documents and FAQs to improve system performance
+            </li>
+            <li>
+              Present research findings to the client
+            </li>
+        </ExperienceCard>
+        <ExperienceCard 
+            date="NOV 2022 - DEC 2023"
+            company="PricewaterhouseCoopers Consulting Hong Kong Limited (PwC)"
+            title="One Firm Service – Digital Redesign Practice"
+          >
+            <li>
+              Successfully implemented SAP SuccessFactors Cloud system for a client with 500+ daily users
+            </li>
+            <li>
+              Developed a streamlined pipeline for integrating multiple cloud services
+            </li>
+            <li>
+              Prepared compelling materials for client pitching purposes
+            </li>
+        </ExperienceCard>
+        <ExperienceCard 
+          date="NOV 2022 - JUN 2023"
           company="The University of Hong Kong"
           title="Research Assistant"
         >
           <li>
-            Researching AI Large Language Model (ChatGPT) application to be used in upcoming research
+            Conducted research on the application of AI Large Language Model (ChatGPT) for upcoming research
           </li>
           <li>
-            Focusing on the implementation of AI Generated Content (AIGC) and Deep Reasoning
+            Successfully implemented AI Generated Content (AIGC) techniques as a key focus
           </li>
           <li>
-            Working under ex-IBM researcher guidance
+            Received guidance and mentorship from a former IBM researcher throughout the project  
           </li>
         </ExperienceCard>
         <ExperienceCard 

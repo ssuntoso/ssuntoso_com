@@ -9,7 +9,7 @@ export default function Education(){
       <div className='grid lg:grid-cols-2 grid-cols-1 gap-2 mx-4'>
         <div>
           <ExperienceCard 
-            date="SEP 2020 - AUG 2024 (Expected)"
+            date="SEP 2020 - JAN 2025 (Expected)"
             company="The University of Hong Kong"
             title="Bachelor of Arts and Sciences in Applied Artificial Intelligence - BASc(Applied AI)"
           >

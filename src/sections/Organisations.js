@@ -8,7 +8,7 @@ export default function Organisations(){
       <Title head='Organisations' highlight='Together We Are Stronger'/>
       <div className='grid lg:grid-cols-2 grid-cols-1 gap-2 mx-4'>
         <ExperienceCard 
-          date="AUG 2020 - present"
+          date="AUG 2020 - JULY 2022"
           company="CodeOne"
           title="Founder"
         >
@@ -16,7 +16,7 @@ export default function Organisations(){
             Introducing tech industry to senior high school students
           </li>
           <li>
-            Help apply their knowledge to build functional application
+            Helped more than 200 senior high school students in growing their tech portfolio
           </li>
         </ExperienceCard>
         <ExperienceCard 
