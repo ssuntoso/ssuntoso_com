@@ -25,7 +25,7 @@ export default function App() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () =>
-        setSmall(window.pageYOffset > 10)
+        setSmall(window.scrollY > 10)
       );
     }
   }, []);
@@ -41,8 +41,8 @@ export default function App() {
     const element = document.getElementById(`${value}`);
     const headerOffset = 150;
     const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-    const mobileOffsetPosition = elementPosition + window.pageYOffset - window.screen.height + 100 - headerOffset;
+    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+    const mobileOffsetPosition = elementPosition + window.scrollY - window.screen.height + 100 - headerOffset;
     if (element) {
       // 👇 Will scroll smoothly to the top of the next section
       if(active){
